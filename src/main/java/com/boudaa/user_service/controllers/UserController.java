@@ -41,8 +41,6 @@ public class UserController {
         return ResponseEntity.ok(userDto);
     }
 
-
-
     @PostMapping
     public ResponseEntity<?> createUser(@RequestBody UserDto userDto) {
 
