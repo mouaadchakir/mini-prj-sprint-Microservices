@@ -9,9 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.boudaa</groupId>
-    <artifactId>user_service</artifactId>
+    <artifactId>university-library</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user_service</name>
+    <name>university-library-microservices</name>
+    <modules>
+        <module>eureka-server</module>
+        <module>gs-catalogue</module>
+    </modules>
     <description>user_service</description>
     <url/>
     <licenses>

@@ -11,15 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/users")
 public class UserController {
-
-    @Autowired
-    private UserService userService;
-    @GetMapping("/{id}")
-    public ResponseEntity<?> finUserById(@PathVariable("id") long idUser) {
-
-        //On appel le service métier pour chercher l'utilisateur par ID
-        User user = userService.findUserById(idUser);
-
+"id") long idUser) {
         //Si introuvable on retourne http code not found
         if (user == null) {
             return ResponseEntity.notFound().build();
