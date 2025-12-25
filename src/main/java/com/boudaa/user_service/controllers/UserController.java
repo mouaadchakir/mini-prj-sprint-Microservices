@@ -14,9 +14,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private UserService userService;
-
     @GetMapping("/{id}")
     public ResponseEntity<?> finUserById(@PathVariable("id") long idUser) {
 
